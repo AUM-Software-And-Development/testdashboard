@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #c7c8cf;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.dashboard-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  color: #fff;
+  background-color: #a0a0a0;
+  margin-bottom: 10px;
+}
+
+.dashboard-wrapper {
+  padding: 0 1.8rem;
+}
+
+.wordpress-postbin {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 2fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
+  grid-gap: 3.3rem;
+  margin-top: 80vh;
+  margin-right: 27%;
+}
+
+.wordpress-postcard {
+  text-decoration: none;
+  color: #a3a3a3cc;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 11px;
+  -webkit-box-shadow: 0 1px 1px rgba(82, 54, 54, 0.27);
+          box-shadow: 0 1px 1px rgba(82, 54, 54, 0.27);
+}
+
+.wordpress-postcard:hover {
+  -webkit-box-shadow: 0 1px 3px rgba(82, 54, 54, 0.27), 0 6px 3px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 3px rgba(82, 54, 54, 0.27), 0 6px 3px rgba(0, 0, 0, 0.12);
+}
+/*# sourceMappingURL=styles.css.map */

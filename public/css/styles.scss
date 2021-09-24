@@ -1,0 +1,51 @@
+// Constant items
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #c7c8cf;
+}
+
+img {
+  max-width: 100%;
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+// Class items
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  color: #fff;
+  background-color: #a0a0a0;
+  margin-bottom: 10px;
+}
+
+.dashboard-wrapper {
+  padding: 0 1.8rem;
+}
+
+.wordpress-postbin {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
+  grid-gap: 3.3rem;
+  margin-top: 80vh;
+  margin-right: 27%;
+}
+
+.wordpress-postcard {
+  text-decoration: none;
+  color: #a3a3a3cc;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 11px;
+  box-shadow: 0 1px 1px rgba(82, 54, 54, 0.27);
+
+  &:hover {
+    box-shadow: 0 1px 3px rgba(82, 54, 54, 0.27), 0 6px 3px rgba(0, 0, 0, 0.12);
+  }
+}

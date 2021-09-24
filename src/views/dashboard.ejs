@@ -1,0 +1,52 @@
+<!-- PARAMETERS:
+{ posts: wordpressAPI.data } -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric's Dash</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="dashboard-header">
+        <div class="logo-header">Eric Dee's Dashboard</div>
+        <div class="search-header">|</div>
+    </header>
+
+    <div class="dashboard-wrapper">
+
+        <div class="wordpress-postbin">
+
+            <% if (posts) { %>
+                <% posts.forEach(function(post, index) { %>
+
+                    <!-- Most of the objects contain a rendered object for dereferencing -->
+                    <a href="#" class="wordpress-postcard">
+                        <img src="<%- post._embedded['wp:featuredmedia'][0].link %>" alt="Place a logo here">
+                        <h2>
+                            <%- post.title.rendered %>
+                        </h2>
+                        <p>
+                            <%- post.content.rendered %>
+                        </p>
+                    </a>
+                    <% }) %>
+                        <% } else { %>
+
+                            <p>No content found.</p>
+
+                            <% } %>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
